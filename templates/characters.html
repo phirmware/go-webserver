@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>{{ .Header }}</h1>
+    <h3>Number of characters is {{ .Data.Count }}</h3>
+    <ul>
+        {{ range .Data.Characters }}
+          <li>{{ .Name }}</li>
+        {{ end }}
+    </ul>
 </body>
 </html>
